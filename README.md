@@ -46,6 +46,13 @@ a demo image of the application here...
 
 ### Back-end:
 
+- [Node.js](https://nodejs.org/en/);
+- [ESLINT](https://eslint.org/docs/user-guide/getting-started);
+- [Prettier](https://prettier.io/docs/en/install.html);
+- [Typescript](https://www.typescriptlang.org/docs/);
+- [Express](https://expressjs.com/pt-br/starter/installing.html);
+- [TypeORM](https://typeorm.io/#/);
+
 ### Front-end:
 
 ---
