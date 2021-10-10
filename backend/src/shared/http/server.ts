@@ -4,6 +4,7 @@ import express, { NextFunction, Request, Response } from 'express';
 import cors from 'cors';
 import AppError from '@shared/errors/AppError';
 import routes from './routes';
+import '@shared/typeorm';
 
 const app = express();
 
