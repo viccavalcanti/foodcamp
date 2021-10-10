@@ -60,12 +60,36 @@ a demo image of the application here...
 
 To install Foodcamp, follow these steps:
 
-```
-$ git clone
-$ yarn
-$ yarn start (for front-end)
-$ yarn dev:server (for back-end)
-```
+- For the backend:
+
+Create a ```.env``` file at the root of the project, populating all of the ```.env.example``` examples.
+
+Create the ```ormconfig.json``` file at the root of the project, and fill in your database connection data.
+For more information, read the documentation [Connection Options](https://typeorm.io/#/connection-options).
+
+~~~JSON
+{
+  // Arquivo de exemplo
+  "type": "", 
+  "host": "", 
+  "port": ,
+  "username": "",
+  "password": "",
+  "database": ""
+}
+~~~
+
+After creating the docker containers, update the project dependencies with the command below and you will be ready to run the application. 
+
+~~~shell
+$ yarn install # link dependencies...
+$ yarn typeorm migration:run # To create migrations
+$ yarn dev # (for back-end)
+~~~
+
+> If you are going to use docker-compose, in the ```.env.example``` file you have the information about which variables are necessary to fill in to upload the application's services, postgres, pgadmin and redis.
+
+---
 
 ## 📫 Contributing to Foodcamp
 To contribute with <strong>Foodcamp</strong>, follow these steps:
