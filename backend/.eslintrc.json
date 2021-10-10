@@ -26,6 +26,7 @@
     "import/extensions": "off",
     "import/prefer-default-export": "off",
     "class-methods-use-this": "off",
-    "camelcase": "off"
+    "camelcase": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off"
   }
 }
