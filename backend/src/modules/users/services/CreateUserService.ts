@@ -1,5 +1,7 @@
 import AppError from '@shared/errors/AppError';
 import { getCustomRepository } from 'typeorm';
+import { hash } from 'bcryptjs';
+import { classToClass } from 'class-transformer';
 import User from '../typeorm/entities/User';
 import UsersRepository from '../typeorm/repositories/UsersRepository';
 
@@ -29,7 +31,7 @@ class CreateUserService {
 
     await usersRepository.save(user);
 
-    return user;
+    return classToClass(user);
   }
 }
 
