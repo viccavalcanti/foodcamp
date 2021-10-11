@@ -9,7 +9,7 @@ interface IUser {
   email: string;
 }
 
-class UpdateUserService {
+class UpdateUserProfileService {
   public async execute({ id, name, email }: IUser): Promise<User> {
     const usersRepository = getCustomRepository(UsersRepository);
 
@@ -34,4 +34,4 @@ class UpdateUserService {
   }
 }
 
-export default UpdateUserService;
+export default UpdateUserProfileService;
