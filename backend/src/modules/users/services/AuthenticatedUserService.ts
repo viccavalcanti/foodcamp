@@ -2,6 +2,8 @@ import AppError from '@shared/errors/AppError';
 import { getCustomRepository } from 'typeorm';
 import { compare } from 'bcryptjs';
 import { classToClass } from 'class-transformer';
+import { sign } from 'jsonwebtoken';
+import authConfig from '@config/auth';
 import UsersRepository from '../typeorm/repositories/UsersRepository';
 
 interface IUser {
@@ -11,6 +13,7 @@ interface IUser {
 
 interface IResponse {
   user: IUser;
+  token: string;
 }
 
 class AuthenticatedUserService {
@@ -29,7 +32,12 @@ class AuthenticatedUserService {
       throw new AppError('Incorrect email/password combination', 401);
     }
 
-    return { user: classToClass(user) };
+    const token = sign({}, authConfig.jwt.secret, {
+      subject: user.id,
+      expiresIn: authConfig.jwt.expiresIn,
+    });
+
+    return { user: classToClass(user), token };
   }
 }
 
