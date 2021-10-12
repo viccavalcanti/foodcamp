@@ -1,3 +1,4 @@
+import { classToClass } from 'class-transformer';
 import { getCustomRepository } from 'typeorm';
 import User from '../typeorm/entities/User';
 import UsersRepository from '../typeorm/repositories/UsersRepository';
@@ -8,7 +9,7 @@ class ListUserService {
 
     const users = await usersRepository.find();
 
-    return users;
+    return classToClass(users);
   }
 }
 
