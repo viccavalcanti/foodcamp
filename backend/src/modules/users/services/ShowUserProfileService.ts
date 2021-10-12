@@ -1,4 +1,5 @@
 import AppError from '@shared/errors/AppError';
+import { classToClass } from 'class-transformer';
 import { getCustomRepository } from 'typeorm';
 import User from '../typeorm/entities/User';
 import UsersRepository from '../typeorm/repositories/UsersRepository';
@@ -13,7 +14,7 @@ class ShowUserProfileService {
       throw new AppError('User not found', 404);
     }
 
-    return user;
+    return classToClass(user);
   }
 }
 
