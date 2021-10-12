@@ -7,12 +7,12 @@ class SessionsController {
 
     const authenticatedUserService = new AuthenticatedUserService();
 
-    const { user } = await authenticatedUserService.execute({
+    const { user, token } = await authenticatedUserService.execute({
       email,
       password,
     });
 
-    return response.json(user);
+    return response.json({ user, token });
   }
 }
 
