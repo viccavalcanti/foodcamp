@@ -1,0 +1,165 @@
+$color-white: #FFFFFF;
+$color-black: #000000;
+$color-aparencia: #505050;
+$color-recusado: #E34850CC;
+$color-analise: #FF9539;
+$color-andamento: #0082CA;
+
+// Escalas de Neutral 
+$color-neutral-900: #8E8A8B;
+$color-neutral-800: #C4C4C4;
+$color-neutral-700: #707070;
+$color-neutral-600: #C6C1C3;
+$color-neutral-500: #555453;
+$color-neutral-400: #323232;
+$color-neutral-300: #6E6E6E;
+$color-neutral-200: #BCBCBC;
+$color-neutral-100: #EAEAEA;
+$color-neutral-lightest: #F4F4F4;
+$color-neutral-transparency: #7070704f;
+$color-neutral-border-transparency: #bcbcbc8a;
+
+
+// Cores primárias 
+$color-primary-600: #E6F5FD;
+$color-primary-500: #0082CA14;
+$color-primary-400: #003159;
+$color-primary-300: #004D8B;
+$color-primary-200: #0082CA;
+$color-primary-100: #0095E8;
+$color-primary-lightest: #0095E852;
+
+
+
+
+// Cores secundárias
+$color-secondary-400: #C25400;
+$color-secondary-300: #DB5F00;
+$color-secondary-200: #FA6C00;
+$color-secondary-100: #FF9539;
+
+// Cores semânticas
+$color-negative-400: #B32E34;
+$color-negative-300: #D7373F;
+$color-negative-200: #E34850;
+$color-negative-100: #FC5059;
+
+$color-warning-400: #D6A200;
+$color-warning-300: #F0B600;
+$color-warning-200: #FFC200;
+$color-warning-100: #FFD54E;
+
+$color-accent-500: #45D8A7;
+$color-accent-400: #1F7559;
+$color-accent-300: #268E6C;
+$color-accent-200: #2D9D78;
+$color-accent-100: #38C294;
+
+// Font Family
+$font-family-main: Raleway;
+$font-family-secondary: Lato;
+
+// Font weight
+$font-weight-700: Bold;
+$font-weight-600: SemiBold;
+$font-weight-500: Medium;
+$font-weight-400: Regular;
+$font-weight-300: Light;
+
+// Line Height
+$line-height-tight: 1;
+$line-height-medium: 1.2;
+$line-height-spaced: 1.5;
+$line-height-distant: 2;
+
+// Border radius
+$border-radius-none: 0px;
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 16px;
+$border-radius-pill: 32px;
+$border-radius-circular: 50%;
+
+// Border width
+$border-width-none: 0px;
+$border-width-hairline: 1px;
+$border-width-thin: 2px;
+$border-width-trick: 4px;
+$border-width-heavy: 8px;
+
+    // Opacity
+    $opacity-level-semiopaque: CC; // 0.80
+    $opacity-level-intense: A3; // 0.64
+    $opacity-level-medium: 52; // 0.32
+    $opacity-level-light: 29; // 0.16
+    $opacity-level-semitransparent: 14; // 0.08
+
+        $opacity-level-semiintense: 99; // 0.60
+
+// Shadow Levels
+$shadow-level-1: 0 2 3;
+$shadow-level-2: 0 3 6;
+$shadow-level-3: 0 8 24;
+$shadow-level-4: 0 16 32;
+
+// Spacing Stak
+$spacing-stack-quarck: 4px;
+$spacing-stack-nano: 8px;
+$spacing-stack-xxxs: 16px;
+$spacing-stack-xxs: 24px;
+$spacing-stack-xs: 32px;
+$spacing-stack-sm: 40px;
+$spacing-stack-md: 48px;
+$spacing-stack-lg: 56px;
+$spacing-stack-xl: 64px;
+$spacing-stack-xxl: 80px;
+$spacing-stack-xxxl: 120px;
+$spacing-stack-huge: 160px;
+$spacing-stack-giant: 200px;
+
+// Spacing Inline
+$spacing-inline-quarck: 4px;
+$spacing-inline-nano: 8px;
+$spacing-inline-xxxs: 16px;
+$spacing-inline-xxs: 24px;
+$spacing-inline-xs: 32px;
+$spacing-inline-sm: 40px;
+$spacing-inline-md: 48px;
+$spacing-inline-lg: 64px;
+$spacing-inline-xl: 80px;
+
+// Spacing Inset
+$spacing-inset-quarck: 4px;
+$spacing-inset-nano: 8px;
+$spacing-inset-xs: 16px;
+$spacing-inset-sm: 24px;
+$spacing-inset-md: 32px;
+$spacing-inset-lg: 40px;
+
+// Spacing Squish
+$spacing-squish-quarck: 4px 8px;
+$spacing-squish-nano: 8px 16px;
+$spacing-squish-xs: 16px 24px;
+$spacing-squish-sm: 24px 32px;
+$spacing-squish-md: 32px 40px;
+$spacing-squish-lg: 40px 48px;
+
+// Escala de tipografia Mobile e Escala de tipografia Desktop
+$font-size-h1: 96px;
+$font-size-h2: 60px;
+$font-size-h3: 48px;
+$font-size-h4: 34px;
+$font-size-h5: 24px;
+$font-size-h6: 20px;
+$font-size-body1: 16px;
+$font-size-body2: 14px;
+$font-size-subtitle1: 16px;
+$font-size-subtitle2: 14px;
+$font-size-caption: 12px;
+$font-size-overline: 12px;
+
+$font-size-button: 14px;
+
+$font-size-top-label: 14px;
+$font-size-bottom-label: 12px;
+$font-size-input: 16px;
