@@ -36,6 +36,22 @@ a demo image of the application here...
 
 #### Back-end:
 
+- [ ] User
+  - [x] User login and authentication;
+    - [x] Create session authentication token;
+    - [x] Hash for passwords;
+  - [x] Password recovery
+    - [x] Recover password through registered email;
+    - [x] Password recovery email;
+    - [x] Password reset;
+    - [x] Password Recovery Tests.
+  - [ ] Profile
+    - [x] Show user profile;
+    - [x] Update avatar profile;
+    - [ ] Change name, email, password;
+- [x] Products
+  - [x] CRUD
+
 ---
 
 #### Front-end:
