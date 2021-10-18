@@ -1,0 +1,1964 @@
+//CHAT - BOTÕES
+
+.button-chat-action {
+    //Hover
+    &:hover{
+        background-color: $color-primary-500;
+    }
+
+    &:hover .tooltips-informative-text {
+        visibility: visible !important;
+    } 
+
+    //Disabled
+    &:disabled{
+        border: $border-width-hairline solid $color-neutral-100;
+        background-color: $color-neutral-lightest;
+        cursor: not-allowed;
+    }
+
+    &:disabled .icon-camera{
+        color: $color-neutral-100;
+    }
+
+    &:disabled .tooltips-informative-text {
+        display: none;
+    } 
+}
+
+.button-chat-send {
+    //Hover
+    &:hover{
+        background-color: $color-primary-100;
+        border: $border-width-hairline solid $color-primary-100;
+    }
+
+    //Disabled
+    &:disabled{
+        border: $border-width-hairline solid $color-neutral-100;
+        background-color: $color-neutral-100;
+        cursor: not-allowed;
+    }
+
+    &:disabled .icon-send{
+        color: $color-white;
+    }
+}
+
+.button-chat-extended-fab-primary{
+    //Hover
+    &:hover{
+        background-color: $color-primary-100;
+    }
+
+    //Disabled
+    &:disabled{
+        background-color: $color-neutral-100;
+        cursor: not-allowed;
+    }
+}
+
+.button-chat-extended-fab-secondary{
+    //Hover
+    &:hover{
+        border: $border-width-hairline solid $color-primary-100;
+        color: $color-primary-100;
+    }
+
+    &:active{
+        background-color: $color-primary-100;
+        color: $color-white;
+        border: $border-width-hairline solid $color-primary-100;
+    }
+
+    //Disabled
+    &:disabled{
+        background-color: $color-neutral-100; 
+        border:$border-width-hairline solid $color-neutral-100;
+        color: $color-white;
+        cursor: not-allowed;
+    }
+}
+
+
+//CHAT - PLACEHOLDER-CHAT
+
+.chat-extended-placeholder{
+    .chat-placeholder:disabled {
+        &::placeholder{
+            color: #00315952;
+        }
+    }
+
+    .button-chat-image {    
+        //Disabled
+        &:disabled{
+            border: $border-width-hairline solid $color-neutral-100;
+            background-color: $color-neutral-lightest;
+            cursor: not-allowed;
+        }
+    
+        &:disabled .icon-image{
+            color: $color-neutral-100;
+        }
+    }
+    
+}
+
+// BOTÕES
+
+.button-primary-high {
+    // Hover
+    &:hover {
+        background-color: $color-primary-300;
+    }
+
+    // Keyboard focus
+    &:focus {
+        background-color: $color-primary-400;
+
+        outline: $color-primary-200 auto 2px;
+        outline-offset: 4px;
+    }
+
+    // Down / touch
+    &:active {
+        background-color: $color-primary-400;
+        outline: none;
+    }
+
+    // Disabled
+    &:disabled {
+        background-color: $color-neutral-lightest;
+
+        color: $color-neutral-200;
+
+        cursor: not-allowed;
+    }
+}
+
+.button-primary {
+    // Hover
+    &:hover {
+        background-color: #{$color-primary-200}#{$opacity-level-light};
+    }
+
+    // Keyboard focus
+    &:focus {
+        background-color: #{$color-primary-200}#{$opacity-level-medium};
+
+        outline: $color-primary-200 auto 2px;
+        outline-offset: 4px;
+    }
+
+    // Down / touch
+    &:active {
+        
+        background-color: #{$color-primary-200}#{$opacity-level-medium};
+        outline: none;
+    }
+
+    // Disabled
+    &:disabled {
+        background-color: $color-neutral-lightest;
+
+        color: $color-neutral-200;
+        border-color: $color-neutral-200;
+
+        cursor: not-allowed;
+    }
+}
+
+.button-primary-low {
+    // Hover
+    &:hover {
+        background-color: #{$color-primary-200}#{$opacity-level-light};
+
+        border-radius: $border-radius-sm;
+    }
+
+    // Keyboard focus
+    &:focus {
+        background-color: #{$color-primary-200}#{$opacity-level-medium};
+
+        outline: $color-primary-200 auto 2px;
+        outline-offset: 4px;
+
+        border-radius: $border-radius-sm;
+    }
+
+    // Down / touch
+    &:active {
+        background-color: #{$color-primary-200}#{$opacity-level-medium};
+        outline: none;
+
+        border-radius: $border-radius-sm;
+    }
+
+    // Disabled
+    &:disabled {
+        background-color: transparent;
+
+        color: $color-neutral-200;
+
+        cursor: not-allowed;
+    }
+}
+
+.button-secondary-high {
+    // Hover
+    &:hover {
+        background-color: $color-secondary-300;
+    }
+
+    // Keyboard focus
+    &:focus {
+        background-color: $color-secondary-400;
+
+        outline: $color-primary-200 auto 2px;
+        outline-offset: 4px;
+    }
+
+    // Down / touch
+    &:active {
+        background-color: $color-secondary-400;
+        outline: none;
+    }
+
+    // Disabled
+    &:disabled {
+        background-color: $color-neutral-lightest;
+
+        color: $color-neutral-200;
+
+        cursor: not-allowed;
+    }
+}
+
+.button-negative {
+    // Hover
+    &:hover {
+        background-color: $color-negative-200;
+
+        border: $border-width-thin solid;
+        border-color: transparent;
+
+        color: $color-white;
+    }
+
+    // Keyboard focus
+    &:focus {
+        background-color: $color-negative-300;
+
+        border: $border-width-thin solid;
+        border-color: transparent;
+
+        color: $color-white;
+
+        outline: $color-primary-200 auto 2px;
+        outline-offset: 4px;
+    }
+
+    // Down / touch
+    &:active {
+        background-color: $color-negative-300;
+        border: $border-width-thin solid;
+        border-color: transparent;
+        color: $color-white;
+        outline: none;
+    }
+
+    // Disabled
+    &:disabled {
+        background-color: $color-neutral-lightest;
+
+        border: $border-width-none;
+
+        color: $color-neutral-200;
+
+        cursor: not-allowed;
+    }
+}
+
+.button-negative-low {
+    // Hover
+    &:hover {
+        background-color: #{$color-negative-200}#{$opacity-level-light};
+
+        border-radius: $border-radius-sm;
+    }
+
+    // Keyboard focus
+    &:focus {
+        background-color: #{$color-negative-200}#{$opacity-level-medium};
+
+        outline: $color-primary-200 auto 2px;
+        outline-offset: 4px;
+
+        border-radius: $border-radius-sm;
+    }
+
+    // Down / touch
+    &:active {
+        background-color: #{$color-negative-200}#{$opacity-level-medium};
+        outline: none;
+
+        border-radius: $border-radius-sm;
+    }
+
+    // Disabled
+    &:disabled {
+        background-color: transparent;
+
+        color: $color-neutral-200;
+
+        cursor: not-allowed;
+    }
+}
+
+.button-accent-primary {
+    // Hover
+    &:hover {
+        background-color: $color-accent-300;
+    }
+
+    // Keyboard focus
+    &:focus {
+        background-color: $color-accent-400;
+
+        outline: $color-primary-200 auto 2px;
+        outline-offset: 4px;
+    }
+
+    // Down / touch
+    &:active {
+        background-color: $color-accent-400;
+        outline: none;
+    }
+
+    // Disabled
+    &:disabled {
+        background-color: $color-neutral-lightest;
+
+        color: $color-neutral-200;
+
+        cursor: not-allowed;
+    }
+}
+
+.button-over-primary {
+    // Hover
+    &:hover {
+        background-color: #{$color-white}#{$opacity-level-semiopaque};
+
+        border: $border-width-thin solid;
+        border-color: transparent;
+
+        color: $color-primary-200;
+    }
+
+    // Keyboard focus
+    &:focus {
+        background-color: $color-white;
+
+        outline: $color-white auto 2px;
+        outline-offset: 4px;
+
+        border: $border-width-thin solid;
+        border-color: transparent;
+
+        color: $color-primary-200;
+    }
+
+    // Down / touch
+    &:active {
+        background-color: $color-white;
+        outline: none;
+
+        border: $border-width-thin solid;
+        border-color: transparent;
+
+        color: $color-primary-200;
+    }
+
+    // Disabled
+    &:disabled {
+        background-color: #{$color-white}#{$opacity-level-light};
+
+        border: $border-width-none;
+
+        color: #{$color-white}#{$opacity-level-medium};
+
+        cursor: not-allowed;
+    }
+}
+
+.button-over-primary-low {
+    // Hover
+    &:hover {
+        background-color: $color-primary-300;
+
+        border-radius: $border-radius-sm;
+    }
+
+    // Keyboard focus
+    &:focus {
+        background-color: $color-primary-400;
+
+        outline: $color-white auto 2px;
+        outline-offset: 4px;
+
+        border-radius: $border-radius-sm;
+    }
+
+    // Down / touch
+    &:active {
+        background-color: $color-primary-400;
+        outline: none;
+
+        border-radius: $border-radius-sm;
+    }
+
+    // Disabled
+    &:disabled {
+        background-color: transparent;
+
+        border-radius: $border-radius-none;
+
+        color: #{$color-white}#{$opacity-level-medium};
+
+        cursor: not-allowed;
+    }
+}
+
+.button-icon-primary-high {
+    // Hover
+    &:hover {
+        background-color: $color-primary-300;
+    }
+
+    // Keyboard focus
+    &:focus {
+        background-color: $color-primary-400;
+
+        outline: $color-primary-200 auto 2px;
+        outline-offset: 4px;
+    }
+
+    // Down / touch
+    &:active {
+        background-color: $color-primary-400;
+        outline: none;
+    }
+
+    // Disabled
+    &:disabled {
+        background-color: $color-neutral-lightest;
+
+        color: $color-neutral-200;
+
+        cursor: not-allowed;
+    }
+}
+
+.button-icon-primary {
+    // Hover
+    &:hover {
+        background-color: #{$color-primary-200}#{$opacity-level-light};
+    }
+
+    // Keyboard focus
+    &:focus {
+        background-color: #{$color-primary-200}#{$opacity-level-medium};
+
+        outline: $color-primary-200 auto 2px;
+        outline-offset: 4px;
+    }
+
+    // Down / touch
+    &:active {
+        
+        background-color: #{$color-primary-200}#{$opacity-level-medium};
+        outline: none;
+    }
+
+    // Disabled
+    &:disabled {
+        background-color: $color-neutral-lightest;
+
+        color: $color-neutral-200;
+        border-color: $color-neutral-200;
+
+        cursor: not-allowed;
+    }
+}
+
+.button-icon-primary-low {
+    // Hover
+    &:hover {
+        background-color: #{$color-primary-200}#{$opacity-level-light};
+
+        border-radius: $border-radius-sm;
+    }
+
+    // Keyboard focus
+    &:focus {
+        background-color: #{$color-primary-200}#{$opacity-level-medium};
+
+        outline: $color-primary-200 auto 2px;
+        outline-offset: 4px;
+
+        border-radius: $border-radius-sm;
+    }
+
+    // Down / touch
+    &:active {
+        background-color: #{$color-primary-200}#{$opacity-level-medium};
+        outline: none;
+
+        border-radius: $border-radius-sm;
+    }
+
+    // Disabled
+    &:disabled {
+        background-color: transparent;
+
+        color: $color-neutral-200;
+
+        cursor: not-allowed;
+    }
+}
+
+.button-overicon-primary {
+    // Hover
+    &:hover {
+        background-color: #{$color-white}#{$opacity-level-semiopaque};
+
+        border: $border-width-thin solid;
+        border-color: transparent;
+
+        color: $color-primary-200;
+    }
+
+    // Keyboard focus
+    &:focus {
+        background-color: $color-white;
+
+        outline: $color-white auto 2px;
+        outline-offset: 4px;
+
+        border: $border-width-thin solid;
+        border-color: transparent;
+
+        color: $color-primary-200;
+    }
+
+    // Down / touch
+    &:active {
+        background-color: $color-white;
+        outline: none;
+
+        border: $border-width-thin solid;
+        border-color: transparent;
+
+        color: $color-primary-200;
+    }
+
+    // Disabled
+    &:disabled {
+        background-color: #{$color-white}#{$opacity-level-light};
+
+        border: $border-width-none;
+
+        color: #{$color-white}#{$opacity-level-medium};
+
+        cursor: not-allowed;
+    }
+}
+
+.button-overicon-primary-low {
+    // Hover
+    &:hover {
+        background-color: $color-primary-300;
+
+        border-radius: $border-radius-sm;
+    }
+
+    // Keyboard focus
+    &:focus {
+        background-color: $color-primary-400;
+
+        outline: $color-white auto 2px;
+        outline-offset: 4px;
+
+        border-radius: $border-radius-sm;
+    }
+
+    // Down / touch
+    &:active {
+        background-color: $color-primary-400;
+        outline: none;
+
+        border-radius: $border-radius-sm;
+    }
+
+    // Disabled
+    &:disabled {
+        background-color: transparent;
+
+        border-radius: $border-radius-none;
+
+        color: #{$color-white}#{$opacity-level-medium};
+
+        cursor: not-allowed;
+    }
+}
+
+// BOTÕES DE AÇÕES
+
+.button-text-only {
+    // Hover
+    &:hover {
+        background-color: #{$color-primary-300}#{$opacity-level-semitransparent};
+    }
+
+    // Keyboard focus
+    &:focus {
+        background-color: #{$color-primary-300}#{$opacity-level-light};
+
+        outline: $color-primary-200 auto 2px;
+    }
+
+    // Down / touch
+    &:active {
+        background-color: #{$color-primary-300}#{$opacity-level-light};
+        outline: none;
+    }
+
+    // Disabled
+    &:disabled {
+        background-color: $color-neutral-lightest;
+
+        border: $border-width-none;
+
+        color: $color-neutral-200;
+
+        cursor: not-allowed;
+    }
+}
+
+.button-text-icon {
+    // Hover
+    &:hover {
+        background-color: #{$color-primary-300}#{$opacity-level-semitransparent};
+    }
+
+    // Keyboard focus
+    &:focus {
+        background-color: #{$color-primary-300}#{$opacity-level-light};
+
+        outline: $color-primary-200 auto 2px;
+    }
+
+    // Down / touch
+    &:active {
+        background-color: #{$color-primary-300}#{$opacity-level-light};
+        outline: none;
+    }
+
+    // Disabled
+    &:disabled {
+        background-color: $color-neutral-lightest;
+
+        border: $border-width-none;
+
+        color: $color-neutral-200;
+
+        cursor: not-allowed;
+    }
+}
+
+.button-text-icon-low {
+    // Hover
+    &:hover {
+        background-color: #{$color-primary-300}#{$opacity-level-semitransparent};
+
+        border-radius: $border-radius-sm;
+    }
+
+    // Keyboard focus
+    &:focus {
+        background-color: #{$color-primary-300}#{$opacity-level-light};
+
+        outline: $color-primary-200 auto 2px;
+
+        border-radius: $border-radius-sm;
+    }
+
+    // Down / touch
+    &:active {
+        background-color: #{$color-primary-300}#{$opacity-level-light};
+        outline: none;
+
+        border-radius: $border-radius-sm;
+    }
+
+    // Disabled
+    &:disabled {
+        background-color: $color-neutral-lightest;
+
+        border-radius: $border-radius-sm;
+
+        color: $color-neutral-200;
+
+        cursor: not-allowed;
+    }
+}
+
+.button-icon-only {
+    // Hover
+    &:hover {
+        background-color: #{$color-primary-300}#{$opacity-level-semitransparent};
+    }
+
+    // Keyboard focus
+    &:focus {
+        background-color: #{$color-primary-300}#{$opacity-level-light};
+
+        outline: $color-primary-200 auto 2px;
+    }
+
+    // Down / touch
+    &:active {
+        background-color: #{$color-primary-300}#{$opacity-level-light};
+        outline: none;
+    }
+
+    // Disabled
+    &:disabled {
+        background-color: $color-neutral-lightest;
+
+        border: $border-width-none;
+
+        color: $color-neutral-200;
+
+        cursor: not-allowed;
+    }
+}
+
+.button-icon-only-low {
+    // Hover
+    &:hover {
+        background-color: #{$color-primary-300}#{$opacity-level-semitransparent};
+
+        border-radius: $border-radius-sm;
+    }
+
+    // Keyboard focus
+    &:focus {
+        background-color: #{$color-primary-300}#{$opacity-level-light};
+
+        border-radius: $border-radius-sm;
+
+        outline: $color-primary-200 auto 2px;
+    }
+
+    // Down / touch
+    &:active {
+        background-color: #{$color-primary-300}#{$opacity-level-light};
+
+        border-radius: $border-radius-sm;
+
+        outline: none;
+    }
+
+    // Disabled
+    &:disabled {
+        background-color: transparent;
+
+        color: $color-neutral-200;
+
+        cursor: not-allowed;
+    }
+}
+
+.button-icon-only-over-background {
+    // Hover
+    &:hover {
+        background-color: $color-neutral-lightest;
+    }
+
+    // Keyboard focus
+    &:focus {
+        background-color: $color-neutral-200;
+
+        outline: $color-primary-200 auto 2px;
+    }
+
+    // Down / touch
+    &:active {
+        background-color: $color-neutral-200;
+        outline: none;
+    }
+
+    // Disabled
+    &:disabled {
+        background-color: $color-neutral-lightest;
+        
+        color: $color-neutral-200;
+
+        cursor: not-allowed;
+    }
+}
+
+// FAB
+
+.fab-primary {
+    // Hover
+    &:hover {
+        background-color: $color-primary-100;
+    }
+
+    // Keyboard focus
+    &:focus {
+        background-color: $color-primary-300;
+
+        outline: none;
+    }
+
+    // Down / touch
+    &:active {
+        background-color: $color-primary-300;
+        outline: none;
+    }
+
+    // Disabled
+    &:disabled {
+        background-color: $color-neutral-lightest;
+        
+        color: $color-neutral-200;
+
+        cursor: not-allowed;
+    }
+}
+
+.fab-secondary {
+    // Hover
+    &:hover {
+        background-color: $color-secondary-100;
+    }
+
+    // Keyboard focus
+    &:focus {
+        background-color: $color-secondary-300;
+
+        outline: none;
+    }
+
+    // Down / touch
+    &:active {
+        background-color: $color-secondary-300;
+        outline: none;
+    }
+
+    // Disabled
+    &:disabled {
+        background-color: $color-neutral-lightest;
+        
+        color: $color-neutral-200;
+
+        cursor: not-allowed;
+    }
+}
+
+
+.extended-fab-primary {
+    // Hover
+    &:hover {
+        background-color: $color-primary-100;
+    }
+
+    // Keyboard focus
+    &:focus {
+        background-color: $color-primary-300;
+
+        outline: none;
+    }
+
+    // Down / touch
+    &:active {
+        background-color: $color-primary-300;
+        outline: none;
+    }
+
+    // Disabled
+    &:disabled {
+        background-color: $color-neutral-lightest;
+        
+        color: $color-neutral-200;
+
+        cursor: not-allowed;
+    }
+}
+
+// LINKS
+
+// AÇÕES RÁPIDAS
+
+.acoes-rapidas{
+    .acoes-rapidas-inside{
+        .btn-acoes-rapidas-edit{
+            //Hover
+            &:hover{
+                background-color: #D6EBF7;
+            }
+
+            //Active
+            &:active{
+                background-color: #ADD7EE;
+            }
+        }
+
+        .btn-acoes-rapidas-edit-icon{
+            //Hover
+            &:hover{
+                background-color: #D6EBF7;
+                width: 30px;
+                height: 30px;
+                margin: 5px 5px;
+            }
+    
+            //Active
+            &:active{
+                background-color: #ADD7EE;
+                width: 30px;
+                height: 30px;
+                margin: 5px 5px;
+            } 
+
+        }
+    
+        .btn-acoes-rapidas-copy{
+            //Hover
+            &:hover{
+                background-color: #D6EBF7;
+            }
+            
+            //Active
+            &:active{
+                background-color: #ADD7EE;
+            }
+        }
+
+        .btn-acoes-rapidas-copy-icon{
+
+            //Hover
+            &:hover{
+                background-color: #D6EBF7;
+                width: 30px;
+                height: 30px;
+                margin: 5px 5px;
+            }
+    
+            //Active
+            &:active{
+                background-color: #ADD7EE;
+                width: 30px;
+                height: 30px;
+                margin: 5px 5px;
+            } 
+        }
+    
+        .btn-acoes-rapidas-delete{
+
+            //Hover
+            &:hover{
+                background-color: #D6EBF7;
+            }
+    
+            //Active
+            &:active{
+                background-color: #ADD7EE;
+            }
+        }
+
+        .btn-acoes-rapidas-delete-icon{
+
+            //Hover
+            &:hover{
+                background-color: #D6EBF7;
+                width: 30px;
+                height: 30px;
+                margin: 5px 5px;
+            }
+    
+            //Active
+            &:active{
+                background-color: #ADD7EE;
+                width: 30px;
+                height: 30px;
+                margin: 5px 5px;
+            } 
+        }
+    }
+   
+}
+// COACH MARK
+
+// DIALOG
+
+// TOAST
+
+// TOOLTIPS
+
+// CHECKBOX
+
+.checkbox-with-label {
+    //Hover
+    .checkmark-with-label:hover {
+        border: 2px solid $color-neutral-400;
+    }
+
+    //Keyboard focus
+    .checkmark-with-label:focus {
+        outline: $color-primary-200 auto 2px !important;
+        outline-offset: 4px;
+    }
+
+    //Disabled
+    input:disabled ~ .checkmark-with-label {
+        border: 2px solid $color-neutral-200;
+    }
+
+    //Checked
+    input:checked ~ .checkmark-with-label {
+        animation: shrink-bounce 200ms cubic-bezier(0.4, 0, 0.23, 1);
+        background-color: $color-primary-300;
+        border: 2px solid $color-primary-300;
+        width: 18px;
+        height: 18px;
+    }
+
+    //After
+    input:checked ~ .checkmark-with-label:after {
+        display: block;
+    }
+
+    .checkmark-with-label:after {
+        animation: checkbox-with-label-check 125ms 250ms cubic-bezier(0.4, 0, 0.23, 1) forwards;
+        content: "";
+        position: absolute;
+        display: none;
+        left: 0;
+        top: 7px;
+        width: 18px;
+        height: 18px;
+        border: solid $color-white;
+        border-width: 0 3px 3px 0;
+        border-radius: 2px;
+        transform: rotate(45deg);
+        transform-origin: 0% 100%;
+    }
+}
+
+.checkbox-with-label-readonly {
+    //Hover
+    &:hover input ~ .checkmark-with-label {
+        background-color: $color-neutral-100;
+    }
+
+    //Checked
+    input:checked ~ .checkmark-with-label {
+        background-color: transparent;
+        border: 0;
+    }
+
+    .checkmark-with-label:focus {
+        background-color: $color-primary-400;
+
+        outline: $color-primary-200 auto 2px;
+        outline-offset: 4px;
+    }
+
+    //After
+    input:checked ~ .checkmark-with-label:after {
+        display: block;
+    }
+
+    .checkmark-with-label:after {
+        content: "";
+        position: absolute;
+        display: none;
+        left: 0px;
+        top: 6px;
+        width: 5px;
+        height: 15px;
+        border: solid $color-neutral-200;
+        border-width: 0 3px 3px 0;
+        transform: rotate(45deg);
+        transform-origin: 0% 100%;
+    }
+}
+
+.checkbox-with-label-indeterminate {
+    //Hover
+    .checkmark-with-label-indeterminate:hover {
+        background-color: $color-neutral-400;
+        border: 2px solid $color-neutral-400;
+    }
+
+    //Keyboard focus
+    .checkmark-with-label-indeterminate:focus {
+        outline: $color-primary-200 auto 2px !important;
+        outline-offset: 4px;
+    }
+
+    //Disabled
+    input:disabled ~ .checkmark-with-label-indeterminate {
+        border: 2px solid $color-neutral-300;
+        background-color: $color-neutral-300;
+    }
+
+    //Checked
+    input:checked ~ .checkmark-with-label-indeterminate {
+        animation: shrink-bounce 200ms cubic-bezier(0.4, 0, 0.23, 1);
+        background-color: $color-neutral-400;
+        border: 2px solid $color-neutral-400;
+        width: 18px;
+        height: 18px;
+    }
+
+    //Before
+    input ~ .checkmark-with-label-indeterminate::before {
+        display: block;
+    }
+
+    .checkmark-with-label-indeterminate::before {
+        animation: checkbox-with-label-indeterminate-check 125ms 250ms cubic-bezier(0.4, 0, 0.23, 1) forwards;
+        content: "";
+        position: absolute;
+        display: none;
+        left: 1px;
+        top: 5px;
+        width: 18px;
+        height: 18px;
+        border: solid $color-white;
+        border-width: 0 3px 3px 0;
+        border-radius: 3px;
+        transform: rotate(45deg);
+        transform-origin: 0% 100%;
+    }
+
+    //After
+    input:checked ~ .checkmark-with-label-indeterminate:after {
+        display: block;
+    }
+
+    .checkmark-with-label-indeterminate:after {
+        // animation: checkbox-with-label-indeterminate-check 125ms 250ms cubic-bezier(0.4, 0, 0.23, 1) forwards;
+        content: "";
+        position: absolute;
+        display: none;
+        left: 1px;
+        top: 5px;
+        width: 18px;
+        height: 18px;
+        border: solid $color-white;
+        border-width: 0 3px 3px 0;
+        border-radius: 3px;
+        transform: rotate(45deg);
+        transform-origin: 0% 100%;
+    }
+}
+
+.checkbox-with-label-readonly-indeterminate {
+    //Hover
+    &:hover input ~ .checkmark-with-label-indeterminate {
+        background-color: $color-neutral-100;
+    }
+
+    //Checked
+    input:checked ~ .checkmark-with-label-indeterminate {
+        background-color: transparent;
+        border: 0;
+    }
+
+    //Keyboard focus
+    .checkmark-with-label-indeterminate:focus {
+        background-color: $color-neutral-400;
+
+        outline: $color-primary-200 auto 2px;
+        outline-offset: 4px;
+    }
+
+    //After
+    input:checked ~ .checkmark-with-label-indeterminate:after {
+        display: block;
+    }
+
+    .checkmark-with-label-indeterminate:after {
+        content: "";
+        position: absolute;
+        display: none;
+        left: 1px;
+        top: 6px;
+        width: 5px;
+        height: 15px;
+        border: solid $color-neutral-200;
+        border-width: 0 3px 3px 0;
+        transform: rotate(45deg);
+        transform-origin: 0% 100%;
+    }
+}
+
+//COMBO BOX
+
+.combo-box-top-label {
+
+    input:hover {
+        border: $border-width-hairline solid $color-neutral-300 ;
+    }
+
+    input:hover::-webkit-input-placeholder {
+        color: $color-neutral-300;
+    }
+
+    input:hover + span{
+        background-color: $color-neutral-300;
+    }
+
+    input:hover[data-chosen=''] + span {
+        width: 1px;
+        background-color: $color-neutral-300;
+    }
+
+    //Keyboard focus
+    input:focus-within + span{
+        width: 1px;
+        background-color: $color-primary-200; 
+    }
+
+    input:focus-within {
+        border: $border-width-thin solid $color-primary-200;
+        outline: none;
+    }
+
+    input:focus-within::-webkit-input-placeholder {
+        color: $color-neutral-300;
+    }
+
+    input:focus-within[data-chosen=''] + span {
+        width: 1px;
+        background-color: $color-primary-200;
+    }
+
+
+    //Active
+    datalist option:active {
+        color: red;
+    }
+
+
+    //Disabled
+    input:disabled{
+        border-color: $color-neutral-lightest;
+        background-color: $color-neutral-lightest;
+    }
+
+    input:disabled::-webkit-input-placeholder {
+        color: $color-neutral-200;
+    }
+
+    input:disabled + span{
+        background-color: $color-neutral-lightest;
+    }
+
+    input[data-chosen] {
+        outline: $color-primary-200 auto 2px;   
+        color: $color-neutral-300;
+    }
+
+    input[data-chosen=''] {
+        outline: none;   
+        color: $color-neutral-200;
+    }
+
+    input[data-chosen] + span {
+        width: 2px;
+        background-color: $color-primary-200;
+    }
+
+    input[data-chosen=''] + span {
+        width: 1px;
+        background-color: $color-neutral-200;
+    }
+
+}
+
+
+//DROPDOWN
+.dropdown::after{
+    font-family: "icons";
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    pointer-events: none;
+}
+
+select {
+    //Hover
+    &:hover {
+        border: $border-width-hairline solid $color-neutral-300;
+        color: $color-neutral-300;
+    }
+
+    //Keyboard focus
+    &:focus-within{
+        border: $border-width-thin solid $color-primary-200;
+    }
+
+    //Disabled
+    &:disabled{
+        border: $border-width-hairline solid $color-neutral-lightest;
+        background-color: $color-neutral-lightest;
+        color: $color-neutral-200;
+    }
+
+}
+
+select[data-chosen] {
+    outline: $color-primary-200 auto 1px;   
+    color: $color-neutral-300;
+}
+
+
+//RADIO BUTTON
+
+.radio-button-with-label {
+    //Hover
+    &:hover {
+        border: $border-width-thin solid $color-neutral-300;
+    }
+
+    //Keyboard focus
+    &:checked:focus {
+        border: $border-width-thin solid $color-neutral-200;
+        border-radius: $border-radius-circular;
+    }
+
+    //Disabled
+    &:disabled {
+        border: $border-width-thin solid $color-neutral-100;
+    }
+
+    //Checked
+    &:checked {
+        border: $border-width-thin solid $color-primary-200;
+    }
+
+    //Checked e disabled
+    &:checked:disabled {
+        border: $border-width-thin solid $color-neutral-200;
+    }
+}
+
+//Before
+.radio-button-with-label:before {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin: 20% auto;
+    border-radius: $border-radius-circular;
+}
+
+//Checked
+.radio-button-with-label:checked:before {
+    background: $color-primary-200;
+}
+
+//Checked e disabled
+.radio-button-with-label:checked:disabled:before {
+    background: $color-neutral-200;
+}
+
+//Keyboard focus
+.radio-button-with-label:checked:focus {
+    box-shadow: 0px 0px 0px 1px $color-white, 0px 0px 0px 3px $color-primary-200;
+    box-sizing: border-box;
+}
+
+.radio-button-with-label:focus {
+    box-shadow: 0px 0px 0px 1px $color-white, 0px 0px 0px 3px $color-primary-200;
+    box-sizing: border-box;
+}
+
+// TOGGLE / SWITCH / SLIDER
+
+.toggle {
+    //Checked e After
+    input:checked + .slider::after {
+        left: calc(100%);
+        transform: translateX(-100%);
+        background-color: $color-primary-200;
+    }
+
+    //Checked
+    input:checked + .slider {
+        background-color: rgb(0, 149, 232, 0.4);
+    }
+
+    //Keyboard focus
+    input:checked + .slider:focus-within{
+        box-shadow: 0px 0px 0px 2px $color-white, 0px 0px 0px 3px $color-primary-200;
+        box-sizing: border-box;
+        outline: none;
+    }
+
+    .slider:focus{
+        box-shadow: 0px 0px 0px 2px $color-white, 0px 0px 0px 3px $color-primary-200;
+        box-sizing: border-box;
+        outline: none;
+    }
+
+    //Disabled
+    input:disabled + .slider{
+        background-color: rgb(110, 110, 110, 0.4);
+    }
+}
+
+.slider {
+    //Hover
+    &:hover{
+        background-color: rgb(110, 110, 110, 0.4);
+    }
+
+    //After
+    &:after {
+        content: "";
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: white;
+        top: -2px;
+        left: 0px;
+        transition: all 0.3s;
+        box-shadow: 0px 1px 3px $color-neutral-300;
+    }
+}
+
+//After
+.slider:active:after {
+    width: 10px;
+}
+
+// TEXT FIELDS
+
+.input-top-label {
+    &>input {
+        //Hover
+        &:hover {
+            border-color: $color-neutral-300;
+
+            &::placeholder {
+                color: $color-neutral-400;
+            }
+        }
+        //Keyboard focus
+        &:focus {
+            outline: $color-primary-200 auto 2px;
+
+            &::placeholder {
+                color: $color-neutral-400;
+            }
+        }
+
+        // Disabled
+        &:disabled {
+            background-color: $color-neutral-lightest;
+
+            border: $border-width-none;
+
+            color: $color-neutral-200;
+
+            cursor: not-allowed;
+
+            &::placeholder {
+                color: $color-neutral-200;
+            }
+        }        
+    }
+}
+
+// BREADCRUMBS
+
+.breadcrumb {
+    a:hover {
+        text-decoration: underline;
+    }
+
+    a:focus {
+        text-decoration: underline;
+
+        outline: $color-primary-200 auto 2px;
+        outline-offset: 4px;
+    }
+}
+
+// SIDE NAVIGATION
+
+.side-nav-headers nav ul li{
+    //Hover
+    &:hover {
+        background-color: $color-neutral-lightest;
+
+        button{
+            background-color: $color-neutral-lightest; 
+        }
+    }
+
+    //Keyboard focus
+    button:focus{
+        background-color: $color-neutral-lightest; 
+        outline: $color-primary-200 auto 2px;
+        outline-offset: 1px;
+    }
+
+    //Disabled
+    button:disabled{
+        background-color: $color-white;
+        color: $color-neutral-200;
+    }
+}
+
+.side-nav-headers-icons nav ul li{
+    //Hover
+    &:hover {
+        background-color: $color-neutral-lightest;
+
+        button{
+            background-color: $color-neutral-lightest; 
+        }
+    }
+
+    //Keyboard focus
+    button:focus{
+        background-color: $color-neutral-lightest; 
+        outline: $color-primary-200 auto 2px;
+        outline-offset: 1px;
+    }
+
+    //Disabled
+    button:disabled{
+        background-color: $color-white;
+        color: $color-neutral-200;
+    }
+}
+
+.side-nav-icons nav ul li{
+    //Hover
+    &:hover {
+        background-color: $color-neutral-lightest;
+
+        button{
+            background-color: $color-neutral-lightest; 
+        }
+    }
+
+    //Keyboard focus
+    button:focus{
+        background-color: $color-neutral-lightest; 
+        outline: $color-primary-200 auto 2px;
+        outline-offset: 1px;
+    }
+
+    //Disabled
+    button:disabled{
+        background-color: $color-white;
+        color: $color-neutral-200;
+    }
+}
+
+// TABS
+.tabs{
+    ul{
+       li{
+
+            //Hover
+            label:hover{
+                color: $color-neutral-400;
+                font-family: $font-family-main $font-weight-700;
+            }
+
+            //Checked
+           input:checked + label{
+               height: 47.86px;
+               color: $color-neutral-400;
+               font-family: $font-family-main $font-weight-700;
+               border-bottom: 2px solid $color-neutral-400;
+           }
+
+           //Keyboard focus
+           input:focus + label{
+               outline: $color-primary-200 auto 2px;
+           }
+
+           input:checked:focus + label{
+                outline: $color-primary-200 auto 2px;
+           }
+
+           //Disabled
+           input:disabled + label{
+                color: $color-neutral-200;
+                font-family: $font-family-main $font-weight-400;
+           }
+       }
+    }
+}
+
+.tabs-with-icon{
+    ul{
+       li{
+
+            //Hover
+            label:hover{
+                color: $color-neutral-400;
+                font-family: $font-family-main $font-weight-700;
+            }
+
+            //Checked
+           input:checked + label{
+               height: 47.86px;
+               color: $color-neutral-400;
+               font-family: $font-family-main $font-weight-700;
+               border-bottom: 2px solid $color-neutral-400;
+           }
+
+           //Keyboard focus
+           input:focus + label{
+               outline: $color-primary-200 auto 2px;
+           }
+
+           input:checked:focus + label{
+                outline: $color-primary-200 auto 2px;
+           }
+
+           //Disabled
+           input:disabled + label{
+                color: $color-neutral-200;
+                font-family: $font-family-main $font-weight-400;
+           }
+       }
+    }
+}
+
+.tabs-vertical{
+    ul{
+       li{
+
+            //Hover
+            label:hover{
+                color: $color-neutral-400;
+                font-family: $font-family-main $font-weight-700;
+            }
+
+            //Checked
+           input:checked + label{
+               position: relative;
+               right: 2px;
+               height: 44px;
+               color: $color-neutral-400;
+               font-family: $font-family-main $font-weight-700;
+               border-left: 2px solid $color-neutral-400;
+           }
+
+           //Keyboard focus
+           input:focus + label{
+               outline: $color-primary-200 auto 2px;
+           }
+
+           input:checked:focus + label{
+                outline: $color-primary-200 auto 2px;
+           }
+
+           //Disabled
+           input:disabled + label{
+                color: $color-neutral-200;
+                font-family: $font-family-main $font-weight-400;
+           }
+       }
+    }
+}
+
+.tabs-vertical-with-icon{
+    ul{
+       li{
+            //Hover
+            label:hover{
+                color: $color-neutral-400;
+                font-family: $font-family-main $font-weight-700;
+            }
+
+            //Checked
+            input:checked + label{
+               position: relative;
+               right: 2px;
+               height: 44px;
+               color: $color-neutral-400;
+               font-family: $font-family-main $font-weight-700;
+               border-left: 2px solid $color-neutral-400;
+            }
+
+            //Keyboard focus
+            input:focus + label{
+                outline: $color-primary-200 auto 2px;
+            }
+
+            input:checked:focus + label{
+                outline: $color-primary-200 auto 2px;
+            }
+
+            //Disabled
+            input:disabled + label{
+                color: $color-neutral-200;
+                font-family: $font-family-main $font-weight-400;
+            }
+       }
+    }
+}
+// TAG / CHIP
+
+.tags{
+    //Hover
+    .tag-keyword:hover + .keyword{
+        border: $border-width-hairline solid $color-neutral-400;
+        color: $color-neutral-400;
+    }
+
+    .tag-keyword-removable:hover + .keyword-removable{
+        border: $border-width-hairline solid $color-neutral-400;
+        color: $color-neutral-400;
+    }
+   
+    //Checked
+    .tag-keyword:checked + .keyword{
+        -webkit-transition: all 500ms ease;
+        transition: all 500ms ease;
+        border: $border-width-hairline solid $color-neutral-400;
+        color: $color-neutral-400;
+    }
+
+    .tag-keyword-removable:checked + .keyword-removable{
+        -webkit-transition: all 500ms ease;
+        transition: all 500ms ease;
+        border: $border-width-hairline solid $color-neutral-400;
+        color: $color-neutral-400;
+    }
+
+    //Keyboard focus
+    .tag-keyword:checked:focus + .keyword{
+       outline: $color-primary-200 auto 2px;
+    }
+
+    .tag-keyword-removable:checked:focus + .keyword-removable{
+        outline: $color-primary-200 auto 2px;
+     }
+
+    //Disabled
+    .tag-keyword:disabled + .keyword{
+        border: $border-width-hairline solid $color-neutral-lightest;
+        background-color: $color-neutral-lightest;
+        color: $color-neutral-200;
+    }
+
+    .tag-keyword-removable:disabled + .keyword-removable{
+        border: $border-width-hairline solid $color-neutral-lightest;
+        background-color: $color-neutral-lightest;
+        color: $color-neutral-200;
+    }
+
+}
+// BADGE
+
+.badge-neutral{
+    //Hover
+    &:hover{
+        background-color: $color-neutral-400;
+    }
+
+    //Keyboard focus
+    &:focus{
+        outline: $color-primary-200 auto 2px;
+        outline-offset: 2px;
+    }
+
+    //Disabled
+    &:disabled{
+        background-color: $color-neutral-100;
+        border: none;
+        color: $color-neutral-200;
+    }
+
+    &:disabled .icon-checkmarkcircle{
+        color: $color-neutral-lightest;
+    }
+}
+
+.badge-info{
+    //Hover
+    &:hover{
+        background-color: $color-primary-300;
+    }
+
+    //Keyboard focus
+    &:focus{
+        outline: $color-primary-200 auto 2px;
+        outline-offset: 2px;
+    }
+
+    //Disabled
+    &:disabled{
+        background-color: $color-neutral-100;
+        border: none;
+        color: $color-neutral-200;
+    }
+
+    &:disabled .icon-checkmarkcircle{
+        color: $color-neutral-lightest;
+    }
+}
+
+.badge-positive{
+    //Hover
+    &:hover{
+        background-color: $color-accent-300;
+    }
+
+    //Keyboard focus
+    &:focus{
+        outline: $color-primary-200 auto 2px;
+        outline-offset: 2px;
+    }
+
+    //Disabled
+    &:disabled{
+        background-color: $color-neutral-100;
+        border: none;
+        color: $color-neutral-200;
+    }
+
+    &:disabled .icon-checkmarkcircle{
+        color: $color-neutral-lightest;
+    }
+}
+
+.badge-negative{
+    //Hover
+    &:hover{
+        background-color: $color-negative-300;
+    }
+
+    //Keyboard focus
+    &:focus{
+        outline: $color-primary-200 auto 2px;
+        outline-offset: 2px;
+    }
+
+    //Disabled
+    &:disabled{
+        background-color: $color-neutral-100;
+        border: none;
+        color: $color-neutral-200;
+    }
+
+    &:disabled .icon-checkmarkcircle{
+        color: $color-neutral-lightest;
+    }
+}
+// METER / PROGRESS
+
+// SPINNER
+
+// CARDS
+
+.card-with-preview{
+    //Hover
+    &:hover{
+        cursor: pointer;
+        
+    }
+
+    &:hover .card-title .icon-moresmall{
+        visibility: visible;
+    }
+}
+
+.card-without-preview{
+    //Hover
+    &:hover{
+        cursor: pointer;
+    }
+    
+    &:hover .card-icons span:nth-child(2) {
+        visibility: hidden;
+    }
+
+    &:hover .card-icons span:nth-child(3) {
+        visibility: hidden;
+    }
+}
+
+.card-flexible-height{
+    //Hover
+    &:hover{
+        width: 360px;
+        height: 104px;
+        position: relative;
+
+        .card-image{
+            width: 102px;
+            height: 102px;
+            background: url("../../assets/images/card-flexible.png") no-repeat center;
+        }
+
+        .card-body{
+            width: 257px;
+            height: 104px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 16px 0 0 102px;
+            padding: 0 16px 0 16px;
+            display: flex;
+            flex-direction: column;
+    
+            .card-title{
+                justify-content: space-between;
+                align-content: flex-start;
+                margin: 0;
+                padding: 0;
+
+                .icon-moresmall{
+                    padding: 0;
+                }
+            }
+
+            .body-1{
+                margin: 0;
+                padding-top: 8px;
+                border: none;
+            }
+        }
+    
+        &:hover .card-button{
+            visibility: hidden;
+        }
+    }
+
+}
+
+// HEADERS
+
+// TABLE
